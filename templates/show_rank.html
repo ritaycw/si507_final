@@ -1,0 +1,27 @@
+<!-- <h1>{{data_type}} </h1> -->
+<h1>The followings are the ranks for {{state}} on {{date}} </h1>
+<table class="table table-striped table-hover">
+    <tr>
+        <td>Rank for COVID case rate: {{show_case_rank}}</td>
+    </tr>
+    <tr>
+        <td>Rank for COVID death rate: {{show_death_rank}}</td>
+    </tr>
+    <tr>
+        <td>Rank for fully vaccination rate: {{show_full_vax_rank}}</td>
+    </tr>
+    <tr>
+        <td>Rank for physician's EHR adoption rate: {{show_ehr_rank}}</td>
+    </tr>
+</table>
+
+<p>
+    <br/><br/>
+</p>
+
+<form action="{{ url_for('back_home') }}">
+    <button type="submit">Back to Home Page</button>
+</form>
+<form action="{{ url_for('final') }}">
+    <button type="submit">End Search</button>
+</form>

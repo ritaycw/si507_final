@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+
+<body>
+    <!-- <h1>Enter a 'state' that you want to know (race, vaccination, covid-19 case).</h1> -->
+
+    <form action="/handle_form" method="post">
+        <h1>What data you want to check?</h1>
+        <input type="radio" id="positive_case" name="data_type" value="positive_case">
+        <label for="positive_case">COVID cases</label><br>
+        <input type="radio" id="death" name="data_type" value="death">
+        <label for="death">COVID deaths</label><br>
+        <input type="radio" id="vaccination" name="data_type" value="vaccination">
+        <label for="vaccination">People fully vaccinated</label><br>
+        <input type="submit" value="Submit Form">
+    </form>
+    
+</body>
+
+</html>

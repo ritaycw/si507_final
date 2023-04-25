@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <title>Show EHR Adoption</title>
+</head>
+<h1>The followings are the percentages of physicians adopting any EHR throughout the past few years </h1>
+<body>
+  <table>
+    <tr>
+      <th>Year</th>
+      <th>  --  </th>
+      <th>EHR adoption percentage</th>
+    </tr>
+    {% for k, v in show_ehr_dict.items() %}
+    <tr>
+      <td>{{ k }}</td>
+      <th>  --  </th>
+      <td>{{ v }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+<p>
+    <br/><br/>
+</p>
+
+<form action="{{ url_for('back_home') }}">
+    <button type="submit">Back to Home Page</button>
+</form>
+<form action="{{ url_for('final') }}">
+    <button type="submit">End Search</button>
+</form>
+</html>
